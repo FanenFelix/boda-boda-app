@@ -24,7 +24,7 @@ server.use('/', userRoutes)
 mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true }, function(err) {
     if (err) throw err;
     console.log('Successfully Connected');
-    server.listen(3100, () => {
-        console.log('Listening on 3100')
+    server.listen(3200, () => {
+        console.log('Listening on 3200')
     })
 });
