@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(rel="stylesheet" href="bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet" href="bootstrap/css/customerReg.css")
+        title List of Sales People
+    body
+        .header
+            .topnav(style="display: flex;align-content: space-between;")
+                div
+                    a.active(href="#home") Home
+                    a(href="#news") News
+                    a(href="#contact") Contact
+                    a(href="#about") About
+                    a(href="salesLogin") Logout
+                div(style="margin-left: 450px;")
+                    p BODA BODA BANJA
+
+        //- nav.navbar.navbar-fixed.navbar-expand-lg.navbar-light.bg-light
+        //-     a.navbar-brand(href="#")
+        //-         strong BB-Banja 
+        //-     button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+        //-         span.navbar-toggler-icon
+        //-     #navbarNavDropdown.collapse.navbar-collapse
+        //-         ul.navbar-nav
+        //-             li.nav-item.active
+        //-                 a.nav-link(href="#")
+        //-                     | Home 
+        //-                     span.sr-only (current)
+        //-             li.nav-item
+        //-                 a.nav-link(href="#") Pricing
+        //-             li.nav-item
+        //-                 a.nav-link(href="#") About us
+                    
+
+        table.table
+            thead.thead-dark
+                tr
+                    th First Name
+                    th Last Name 
+                    th Role
+                    th Contact
+                    th ID 
+                    th Email
+                    th Working Days 
+                    th Date of Birth
+                    th Date 
+            tbody
+                each salesPerson in salesPeople
+                    tr
+                        td #{salesPerson.firstName}
+                        td #{salesPerson.lastName}
+                        td #{salesPerson.role}
+                        td #{salesPerson.contact}
+                        td #{salesPerson.id}
+                        td #{salesPerson.email}
+                        td #{salesPerson.workingDaysNum}
+                        td #{salesPerson.dob}
+                        td #{salesPerson.todayDate}
+        .footer.fixed-bottom
+            span(style="color:#555; font-size: 20px; padding-top: 90px;") Boda Boda Banja &copy2020
+        //- footer.fixed-bottom(style ="text-align: center; padding-top: 90px;") &copy;Banja2020
+        script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+
+                        

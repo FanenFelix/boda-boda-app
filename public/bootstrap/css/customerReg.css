@@ -1,0 +1,159 @@
+/*
+Styles for the Nav bar
+*/
+.header {
+    padding: 30px;
+    text-align: center;
+    background: lightgray;
+    color: #555;
+    font-size: 25px;
+    font-family: 'Alef', sans-serif;
+    height: 80px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Alef', sans-serif;
+  }
+  
+  /* .active {
+    background-color: ; */
+    /* color: #ffffff; */
+  /* } */
+  
+  /* Hover on the nav bar */
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+    /* color: white; */
+  }
+
+.bg-light {
+    background-color: rgb(77, 77, 77)!important;
+}
+.td{
+    text-align: center;
+}
+
+#formBorder{
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+form{
+    max-width: 1000px;
+    margin: 0px auto;
+    
+}
+/* .limiter{
+    
+    
+    background-image: url("/bg-01.jpg"); */
+    
+/* } */
+#wrapper{
+    padding-top: 4px;   
+    background-color: rgba(255,255,255,0.9);
+}
+
+#submit{
+    margin-left: 380px;
+    margin-bottom: 5px;
+}
+#vehicle_div{
+    width: 200px;
+    padding-left: 15px;
+    padding-right: 340px;
+}
+
+fieldset {
+    margin: 5px;    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+body{
+    font-size: 0.99rem;
+}
+.table th {
+    padding: 0px;
+    width: auto;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+}
+
+
+legend {
+    width: 23%;
+    padding-left: 2px;
+}
+#occupationLabel{
+    padding-left: 10px;
+    width: 195px;
+}
+#refereeLegend, #customerLegend, #loanLegend {
+    width:auto;
+    background-color: lightgray;
+}
+
+
+#contact_div, #lastName_div, #nin_div{
+    padding-left: 80px;
+}
+#stageName_div{
+    padding-left: 80px;
+    margin-left: 80px;
+}
+#lastName, #contact, #nin, #stageName{
+    width: 225px;
+}
+#firstName, #dob, #nationality{
+    width: 225px;
+}
+
+#single{
+    width: 15px;
+    margin-left: 13px;
+}
+
+#lc1, #lc3, #yes, #no{
+    width: 15px;
+    margin-left: 13px;
+}
+
+#customerLegend{
+    width: auto;
+}
+
+
+#married{
+    width: 15px;
+}
+
+label{
+    padding-left: 15px;
+    width: 200px;
+}
+input{
+    width: 150px;
+}
+
+/*FOOTER NOTE */
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: #d3d3d3;
+    color: #555;
+    size: 20px;
+    padding-left: 500px;
+    margin-top: 40px;
+    font-family: 'Alef', sans-serif;
+  }

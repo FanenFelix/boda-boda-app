@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Sales Person</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/salesLogin.css">
+</head>
+<body>
+	
+	<!--NAVBAR-->
+	<div class="header">
+		<div class="topnav" style="display: flex;align-content: space-between;">
+			<div>
+				<a href="#home" class="active">Home</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About Us</a>
+				<a href="index.html">Logout</a>
+			</div>
+			<div style="margin-left: 450px;">
+				<P>BODA BODA BANJA</P>
+			</div>
+
+		</div>
+	</div> 
+</div class='inplace' style='z-index:'>
+<div class="content">
+
+	<div class='mainCtn' style="display: flex;">
+
+		<div class="slide">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="bg-01.jpg" alt="First slide" style="height: 500px;">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="bg-01.jpg" alt="Second slide" style="height: 600px;">
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+<!-- </div class='inplace' style='z-index:'> -->
+
+	<div id="wrapper">
+
+		<form method="GET" action="/customerReg" onsubmit="return Validate()" name="vform" >
+			<h3>SALES PERSON</h3>
+			
+			<div id="email_div">
+			  <label>Email</label> <br>
+			  <input type="email" name="email" class="textInput">
+			  <div id="email_error"></div>
+			</div>
+			<div id="password_div">
+			  <label>Password</label> <br>
+			  <input type="password" name="password" class="textInput">
+			  <div id="password_error"></div>
+			</div>
+			
+			<div>
+			<input type="submit" name="register" value="Login" class="btn">
+			</div>
+			<a href="#" style="color: none; font-size: 0.9rem;"><i>Forgot Password?</i></a><br>
+			<a href="adminLogin" style="color: none; font-size: 0.9rem;"><i>Administrator?</i></a>
+		</form>
+	</div>
+	</div>
+	
+	<!--FOOTER-->
+	<div class="footer"><span>Boda Boda Banja &copy2020</span>
+	</div>
+
+	<script src="js/salesLogin.js"></script> 
+</body>
+</html>
