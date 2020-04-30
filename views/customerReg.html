@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="bootstrap/css/customerReg.css">
+</head>
+<body>
+    <!--NAVBAR-->
+	<div class="header">
+		<div class="topnav" style="display: flex;align-content: space-between;">
+			<div>
+				<a href="#home" class="active">Home</a>
+				<a href="#news">News</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+				<a href="salesLogin">Logout</a>
+			</div>
+			<div style="margin-left: 450px;">
+				<P>BODA BODA BANJA</P>
+			</div>
+
+		</div>
+	</div>
+    <h3 style="text-align: center;">Customer Registration Form</h3>
+	<div class="limiter">
+		<div>
+			<div id="wrapper">
+				<form name="customer" method="POST" action="/saveCustomer" onsubmit="return customerValidation();" id="formBorder">
+                    <fieldset>
+                        <legend id="customerLegend">Customer Details:</legend>
+                        <div class="form-row">
+                        <div id="firstName_div">
+                          <label>First name:</label>
+                          <input type="text" id="firstName" name="firstName">
+                          <div id="firstName_error"></div>
+                        </div>
+
+                        <div id="lastName_div">
+                          <label>Last name:</label>
+                          <input type="text" id="lastName" name="lastName">
+                          <div id="lastName_error"></div>
+                        </div>
+
+                        </div>
+                        
+                        <div class="form-row">
+                          <div id="dob_div">
+                            <label>Date of Birth:</label>
+                            <input type="date" id="dob" name="dob">
+                            <div id="dob_error"></div>
+                          </div>                       
+                          
+                          <div id="contact_div">
+                            <label>Phone Number:</label>
+                            <input type="string" id="contact" name="contact">      
+                            <div id="contact_error"></div>        
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div id="nationality_div">
+                            <label>Nationality:</label>
+                            <input type="text" id="nationality" name="nationality">    
+                            <div id="nationality_error"></div>                    
+                          </div>
+  
+                          <div id="nin_div">
+                            <label>NIN:</label>
+                            <input type="text" id="nin" name="nin">    
+                            <div id="nin_error"></div>                    
+                          </div>
+                        </div>
+
+
+                        <div class="form-row">
+                          <div id="maritalStatus_div">
+                            <label>Marital Status</label>
+                            <!-- <div class="radio"> -->
+                              <input type="radio" name="maritalStatus"  id="single" value="Single">Single 
+                              <input type="radio" name="maritalStatus"  id="married" value="Married">Married
+                            <!-- </div> -->
+                            <div id="maritalStatus_error"></div>
+  
+                          </div>
+                          
+                          <div id="stageName_div">
+                            <label id="stage">Stage Name:</label>
+                            <input type="text" id="stageName" name="stageName">
+                            <div id="stageName_error"></div>
+                          </div>
+                        </div>
+
+                        
+                          <div id="lc_div">
+                            <label>LC confirmation:</label>
+                            <input type="checkbox" name="lc1" id="lc1" value="lc1">LC1 
+                            <input type="checkbox" name="lc3" id="lc3" value="lc3">LC3<br>
+                            <div id="lc_error"></div>
+                          </div>
+                          
+                          <div id="otherLoans_div"> 
+                            <label>Other Loans:</label>
+                            <input type="radio" name="otherLoans" id="yes" value="yes">YES
+                            <input type="radio" name="otherLoans" id="no" value="no">NO
+                            <div id = "otherLoans_div"></div>
+                          </div>    
+                        
+                        
+                                          
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend id="refereeLegend">Referee Details:</legend>
+
+                        <div class="form-row">
+                          <div id="refereeName_div">
+                            <label>Name:</label>
+                            <input type="refereeName" name="refereeName">
+                            <div id="refereeName_error"></div>                        
+                          </div>
+  
+                          <div id="refereeDob_div">
+                            <label>Date of Birth:</label>
+                            <input type="date" id="refereeDob" name="refereeDob">
+                            <div id="refereeDob_error"></div>
+                          </div>
+                        </div>                        
+
+                        <div id="refereeOccupation_div">
+                          <label id="occupationLabel">Occupation:</label>
+                          <input type="text" id="refereeOccupation" name="refereeOccupation">
+                          <div id="refereeOccupation_error"></div>                    
+                        </div>
+
+                        </fieldset>                      
+                    
+            
+                    <fieldset>
+
+                        <legend id="loanLegend">Loan Details:</legend>
+
+                        <div class="form-row">
+                          <div id="vehicle_div">
+                          
+                            <select name="vehicleType">
+                              <option selected="" value=""><span>(Please select a vehicle)</span></option>
+                              <option value="TukTuk">Tuk Tuk</option>
+                              <option value="BodaBoda">Boda Boda</option>
+                              
+                            </select>                  
+                            
+                          <div id="vehicle_error"></div>                       
+                        </div>
+  
+                          <div id="downPayment_div">
+                            <label>Down Payment:</label>
+                            <input type="text" id="downPayment" name="downPayment">
+                            <div id="downPayment_error"></div>
+                          </div>
+                        </div>
+
+                        
+
+                        <div id="todayDate_div">
+                          <label>Current Date</label>
+                          <input type="date" id="todayDate" name="todayDate">
+                          <div id="todayDate_error"></div>
+                        </div>
+                                 
+                    </fieldset>
+
+                    <button type="submit" class = "btn btn-success" id="submit">Submit</button>
+                    <button type="reset" class= "btn btn-danger" style="margin-bottom: 5px;">Cancel</button>
+              
+				</form>
+			</div>
+    </div>
+   <!--FOOTER-->
+   <div class="footer"><span>Boda Boda Banja &copy2020</span>
+   </div>
+  </div>
+  
+  <script src="js/customerReg.js"></script>
+  
+</body>
+</html>

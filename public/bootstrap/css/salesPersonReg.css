@@ -1,0 +1,90 @@
+/*
+Styles for the Nav bar
+*/
+.header {
+    padding: 30px;
+    background: lightgray;
+    color: #555;
+    font-size: 25px;
+    font-family: 'Alef', sans-serif;
+    height: 80px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Alef', sans-serif;
+  }
+  
+  .active {
+    background-color: ;
+    /* color: #ffffff; */
+  }
+  
+  /* Hover on the nav bar */
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+    /* color: white; */
+  }
+/* .bg-light {
+    background-color: rgb(102, 102, 102)!important; */
+    /* background-color: rgb(3, 126, 34)!important; */
+    
+/* } */
+
+
+.border{
+    border-radius: 5px;
+    width: 1100px;
+    margin-left: 80px;
+}
+h3{
+    text-align: center;
+}
+.container{
+    background-color:  rgba(255,255,255,0.9);
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: initial;  
+    font-size: medium; 
+    
+}
+form{
+    max-width: 900px;
+    margin: 0px auto;
+    
+}
+#vRecord{
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  width: 1100px;
+  padding-left: 10px;
+  margin-left: 100px;
+  height: 50px;
+}
+#viewCustomer{
+  padding-left: 100px;
+}
+#viewSalesAdmin{
+  padding-left: 100px;
+}
+
+/*FOOTER NOTE */
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: #d3d3d3;
+    color: #555;
+    size: 20px;
+    padding-left: 500px;
+    margin-top: 40px;
+    font-family: 'Alef', sans-serif;
+  }
